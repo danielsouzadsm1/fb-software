@@ -3,14 +3,11 @@ import { ArrowRight, Zap } from "lucide-react";
 const Hero = () => {
   return (
     <section id="inicio" className="relative min-h-screen flex items-center overflow-hidden pt-16">
-      {/* Ajustamos o Glow para a direita, para destacar o elemento visual que adicionaremos */}
       <div className="absolute top-1/2 right-0 lg:right-[10%] -translate-y-1/2 w-[600px] h-[600px] rounded-full opacity-20 blur-[120px] pointer-events-none" style={{ background: "radial-gradient(circle, hsl(160 84% 44% / 0.4), transparent 70%)" }} />
 
       <div className="container mx-auto px-4 md:px-8 relative z-10">
-        {/* Implementação do Grid: 1 coluna no mobile, 2 colunas no desktop */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 lg:gap-10 items-center">
 
-          {/* Coluna da Esquerda: Copy e Calls to Action */}
           <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
             <div className="inline-flex items-center gap-2 rounded-full border border-border bg-secondary px-4 py-1.5 mb-8">
               <Zap size={14} className="text-primary" />
@@ -43,8 +40,7 @@ const Hero = () => {
               </a>
             </div>
           </div>
-
-          <div className="relative w-full aspect-square md:aspect-video lg:aspect-square flex items-center justify-center mt-8 lg:mt-16">
+          <div className="relative w-full aspect-square md:aspect-video lg:aspect-square flex items-center justify-center lg:justify-end mt-8 lg:mt-16">
             <div className="relative w-full max-w-md bg-black/40 border border-white/10 rounded-2xl shadow-2xl backdrop-blur-md p-5 overflow-hidden transform transition-transform hover:-translate-y-2 duration-500">
               
               <div className="flex items-center gap-2 mb-6 border-b border-white/10 pb-4">
