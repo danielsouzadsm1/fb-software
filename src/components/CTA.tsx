@@ -16,7 +16,7 @@ const CTA = () => {
               Entre em contato e descubra como podemos acelerar os resultados do seu negócio com tecnologia de ponta.
             </p>
             <a
-              href="https://www.instagram.com/daniels.menezes/"
+              href="https://w.app/fbsoftware"
               target="_blank"
               rel="noopener noreferrer" 
               className="group inline-flex items-center gap-2 rounded-lg bg-[#1DD6BF] px-8 py-4 text-sm font-semibold text-primary-foreground transition-all hover:opacity-90 glow-primary"

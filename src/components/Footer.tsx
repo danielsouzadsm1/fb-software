@@ -18,7 +18,10 @@ const Footer = () => {
             {/* <a href="#" className="text-muted-foreground hover:text-foreground transition-colors" aria-label="LinkedIn">
               <Linkedin size={18} />
             </a> */}
-            <a href="#" className="text-muted-foreground hover:text-foreground transition-colors" aria-label="Instagram">
+            <a href="https://www.instagram.com/fbsoftware.com.br/"
+              target="_blank"    
+              className="text-muted-foreground hover:text-foreground transition-colors" 
+              aria-label="Instagram">
               <Instagram size={18} />
             </a>
             {/* <a href="#" className="text-muted-foreground hover:text-foreground transition-colors" aria-label="GitHub">
