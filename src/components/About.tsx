@@ -4,9 +4,9 @@ const stats = [
   { value: "100%", label: "Foco no seu Projeto" },
   { value: "Ágil", label: "Metodologia de Entrega" },
   { value: "Direto", label: "Atendimento Humanizado" },
-  { value: "Inovação", label: "Stack Tecnológico" },
-  { value: "99%", label: "Uptime garantido" },
   { value: "Escalável", label: "Arquitetura de Software" },
+  { value: "Flexível", label: "Adaptável ao seu Negócio" },
+  { value: "99,999%", label: "Uptime garantido" },
 ];
 
 const highlights = [
@@ -46,7 +46,7 @@ const About = () => {
 
           <div className="grid grid-cols-2 gap-3 mt-8 lg:mt-13">
             {stats.map((stat) => (
-              <div key={stat.label} className="card-glass rounded-xl p-6 text-center hover-lift">
+              <div key={stat.label} className="card-glass rounded-xl p-6 text-center hover:-translate-y-1 hover:shadow-md transition-all duration-350">
                 <div className="font-display text-3xl md:text-4xl font-bold text-gradient mb-1">
                   {stat.value}
                 </div>

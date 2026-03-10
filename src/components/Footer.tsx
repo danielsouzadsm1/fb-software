@@ -17,9 +17,9 @@ const Footer = () => {
           </div>
 
           <div className="flex items-center gap-4">
-            {/* <a href="#" className="text-muted-foreground hover:text-foreground transition-colors" aria-label="LinkedIn">
+            <a target="_blank"  href="https://www.linkedin.com/company/fb-software-solu%C3%A7%C3%B5es/about/" className="text-muted-foreground hover:text-foreground transition-colors" aria-label="LinkedIn">
               <Linkedin size={18} />
-            </a> */}
+            </a>
             <a href="https://www.instagram.com/fbsoftware.com.br/"
               target="_blank"    
               className="text-muted-foreground hover:text-foreground transition-colors" 

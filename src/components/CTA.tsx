@@ -5,7 +5,6 @@ const CTA = () => {
     <section id="contato" className="py-24 md:py-32">
       <div className="container mx-auto px-4 md:px-8">
         <div className="card-glass rounded-2xl p-10 md:p-16 text-center relative overflow-hidden">
-          {/* Glow */}
           <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full opacity-20 blur-[100px]" style={{ background: "radial-gradient(circle, hsl(160 84% 44% / 0.5), transparent 70%)" }} />
           
           <div className="relative z-10">
@@ -21,7 +20,7 @@ const CTA = () => {
               rel="noopener noreferrer" 
               className="group inline-flex items-center gap-2 rounded-lg bg-[#1DD6BF] px-8 py-4 text-sm font-semibold text-primary-foreground transition-all hover:opacity-90 glow-primary"
             >
-              Fale com a gente
+              Fale Conosco
               <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
             </a>
           </div>
