@@ -9,7 +9,7 @@ const Hero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 lg:gap-10 items-center">
 
           <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
-            <div className="inline-flex items-center gap-2 rounded-full border border-border bg-secondary px-4 py-1.5 mb-8">
+            <div className="inline-flex items-center gap-2 rounded-full border border-border bg-secondary px-4 py-1.5 mt-3 mb-7">
               <Zap size={14} className="text-primary" />
               <span className="text-xs font-medium text-muted-foreground">Soluções sob medida para o seu negócio</span>
             </div>
