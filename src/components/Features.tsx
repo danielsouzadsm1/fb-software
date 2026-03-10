@@ -40,7 +40,7 @@ const features = [
     icon: Gauge,
     title: "Performance",
     description: "Otimização contínua para garantir velocidade e eficiência em escala.",
-    backDescription: "AAnálise e otimização de código e infraestrutura para garantir tempos de resposta mínimos. Aplicamos técnicas avançadas de cache, compressão e monitoramento em tempo real para que sua plataforma suporte o crescimento do negócio sem perder velocidade.",
+    backDescription: "Análise e otimização de código e infraestrutura para garantir tempos de resposta mínimos. Aplicamos técnicas avançadas de cache, compressão e monitoramento em tempo real para que sua plataforma suporte o crescimento do negócio sem perder velocidade.",
     backIcon: Gauge,
   },
 ];
@@ -65,29 +65,33 @@ const Features = () => {
           {features.map((feature) => (
             <div
               key={feature.title}
-              className="group w-full h-[195px] [perspective:1000px] cursor-pointer"
+              className="group w-full h-[270px] md:h-[230px] lg:h-[250px] [perspective:1000px]"
             >
-              <div className="relative h-full w-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-                
-                <div className="absolute inset-0 h-full w-full p-6 card-glass rounded-xl [backface-visibility:hidden] flex flex-col">
-                  <div className="w-11 h-11 rounded-md bg-primary/10 flex items-center justify-center mb-5 transition-colors group-hover:bg-primary/20">
+              <div className="relative w-full h-full transition-transform duration-700 will-change-transform [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                <div className="absolute inset-0 card-glass rounded-xl p-4 flex flex-col [backface-visibility:hidden]">
+                  <div className="w-11 h-11 rounded-md bg-primary/10 flex items-center justify-center mb-5">
                     <feature.icon size={20} className="text-primary" />
                   </div>
-                  <h3 className="font-display text-lg font-semibold mb-2">{feature.title}</h3>
+
+                  <h3 className="font-display text-lg font-semibold mb-2">
+                    {feature.title}
+                  </h3>
+
                   <p className="text-sm text-muted-foreground leading-relaxed">
                     {feature.description}
                   </p>
                 </div>
-
-                <div className="absolute inset-0 h-full w-full p-6 card-glass rounded-xl [backface-visibility:hidden] [transform:rotateY(180deg)] flex flex-col items-center justify-center">
+                <div className="absolute inset-0 card-glass rounded-xl p-4 flex flex-col items-center justify-center [transform:rotateY(180deg)] [backface-visibility:hidden]">
                   {feature.backIcon && (
-                    <div className="w-9 h-9 shrink-0 rounded-md bg-primary/10 flex items-center justify-center mb-5">
+                    <div className="w-9 h-9 rounded-md bg-primary/10 flex items-center justify-center mb-2">
                       <feature.backIcon size={20} className="text-primary" />
                     </div>
                   )}
+
                   <p className="text-sm text-muted-foreground leading-relaxed text-center">
                     {feature.backDescription}
                   </p>
+
                 </div>
 
               </div>
